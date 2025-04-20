@@ -10,7 +10,7 @@ class MyAppProfiles extends StatelessWidget {
     final stories = AppDatabase.stories;
 
     return Container(
-      height: 100, // ارتفاع ثابت برای کل محتوا
+      height: 100, 
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.fromLTRB(32, 0, 32, 0),
@@ -40,7 +40,7 @@ class MyAppProfiles extends StatelessWidget {
             child: Container(
               margin: const EdgeInsets.fromLTRB(4, 0, 4, 0),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center, // محتوا را در مرکز قرار می‌دهد
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Stack(
                     children: [

@@ -14,7 +14,6 @@ class _MyAppSplashScreenState extends State<MyAppSplashScreen> {
   void initState() {
     super.initState();
 
-    // تأخیر در ناوبری پس از ساخت کامل ویجت
     WidgetsBinding.instance.addPostFrameCallback((_) {
       Future.delayed(const Duration(seconds: 2)).then((_) {
         Navigator.of(context).pushReplacement(
@@ -36,7 +35,6 @@ class _MyAppSplashScreenState extends State<MyAppSplashScreen> {
               height: double.infinity,
             ),
           ),
-          // لوگو در مرکز صفحه
           Center(
             child: Assets.icons.logo.svg(
               width: 100,

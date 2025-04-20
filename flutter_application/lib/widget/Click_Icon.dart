@@ -9,7 +9,7 @@ class MyClickableIcon extends StatefulWidget {
 }
 
 class _MyClickableIconState extends State<MyClickableIcon> {
-  bool isBookmarked = false; // وضعیت بوکمارک
+  bool isBookmarked = false; 
 
   @override
   Widget build(BuildContext context) {
@@ -19,15 +19,15 @@ class _MyClickableIconState extends State<MyClickableIcon> {
       child: GestureDetector(
         onTap: () {
           setState(() {
-            isBookmarked = !isBookmarked; // تغییر وضعیت
+            isBookmarked = !isBookmarked; 
           });
         },
         child: Icon(
           isBookmarked
-              ? CupertinoIcons.bookmark_fill // آیکون پر شده
-              : CupertinoIcons.bookmark, // آیکون خالی
+              ? CupertinoIcons.bookmark_fill 
+              : CupertinoIcons.bookmark, 
           size: 16,
-          color: isBookmarked ? Colors.black : const Color.fromARGB(255, 0, 0, 0), // تغییر رنگ
+          color: isBookmarked ? Colors.black : const Color.fromARGB(255, 0, 0, 0), 
         ),
       ),
     );

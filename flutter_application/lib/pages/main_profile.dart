@@ -122,9 +122,8 @@ class _MainProfileState extends State<MainProfile> {
             ],
           ),
 
-          // باکس آبی برای تعداد پست‌ها و تعاملات
           Container(
-            margin: const EdgeInsets.fromLTRB(32, 0, 32, 30), // تغییر margin برای جابجایی به بالاتر
+            margin: const EdgeInsets.fromLTRB(32, 0, 32, 30),
             decoration: BoxDecoration(
               color: Colors.blue, // آبی رنگ
               borderRadius: BorderRadius.circular(16),
@@ -135,7 +134,6 @@ class _MainProfileState extends State<MainProfile> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // بخش پست‌ها
                   Column(
                     children: [
                       Text(
@@ -168,7 +166,6 @@ class _MainProfileState extends State<MainProfile> {
                       ),
                     ],
                   ),
-                  // بخش فالوورها
                   Column(
                     children: [
                       Text(

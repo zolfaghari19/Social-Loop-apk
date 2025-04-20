@@ -16,35 +16,27 @@ class _MyAppNavigationState extends State<MyAppNavigation> {
 
   void _onItemTapped(int index) {
     setState(() {
-      _selectedIndex = index; // تغییر ایندکس انتخاب شده
+      _selectedIndex = index; 
     });
 
-    // ناوبری به صفحه Home
     if (index == 0) {
-      // استفاده از pushAndRemoveUntil برای حذف تمامی صفحات قبلی
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(builder: (context) => const HomePage()),
-        (route) => false, // حذف تمامی صفحات قبلی از Back Stack
+        (route) => false, 
       );
     }
 
     if (index == 1) {
-      // ناوبری به صفحه Article
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const ArticleScreen()),
       );
     }
 
-    // برای صفحات دیگر هم می‌توانید همین روش را اعمال کنید
     if (index == 2) {
-      // مثلا برای صفحه Search
-      // Navigator.pushReplacement یا روش مناسب دیگر
     }
     if (index == 3) {
-      // مثلا برای صفحه Menu
-      // Navigator.pushReplacement یا روش مناسب دیگر
     }
   }
 
@@ -74,12 +66,12 @@ class _MyAppNavigationState extends State<MyAppNavigation> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   GestureDetector(
-                    onTap: () => _onItemTapped(0), // فراخوانی تابع برای ایندکس 0
+                    onTap: () => _onItemTapped(0), 
                     child: MyAppNavigationItem(
                       iconFileName: "Home.png",
                       activeIconFileName: "Home.png",
                       title: "Home",
-                      isSelected: _selectedIndex == 0, // بررسی وضعیت انتخاب
+                      isSelected: _selectedIndex == 0,  
                     ),
                   ),
                   GestureDetector(
